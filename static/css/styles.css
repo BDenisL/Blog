@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+            /* VARIABLES */
+:root {
+    --black: #1c1c1c;
+    --licorice: #220901;
+    --blood-red: #621708;
+    --rust: #bc3908;
+    --persimmon: #e95d12;
+    --orange-web: #f6aa1c;
+    --saffron: #e5bf5e;
+    --platinum: #d9d9d9;
+    --isabelline: #f3eae9;
+}
+
+
+
+            /* LIST STYLE - GENERAL */
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var( --black );
+}
+
+
+
+            /* HEADER  */
+.header {
+    width: 350px;
+    height: 1360px;
+    padding-right: 25px;
+    float: left;
+}
+
+/* HEADER - LOGO - BUTTON */
+.header__logo {
+    float: left;
+    margin: 0px 35px;
+}
+
+/* HEADER - NAVIGATOR */
+.header__nav {
+    margin: 30px;
+    align-content: center;
+}
+.header__nav-li {
+    margin: 25px 0px;
+    height: 40px;
+    width: 190px;
+    text-align: center;
+    background-color: var( --platinum );
+    border-radius: 5px;
+}
+.header__nav-li-a {
+    height: 40px;
+    width: 190px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.header__nav-li-a:hover {
+    background-color: var( --orange-web );
+}
+.header__nav-li-a:active {
+    background-color: var( --persimmon );
+}
+
+/* ADMIN - NAV */
+.header__button {
+    margin-left: 70px;
+    height: 40px;
+    width: 190px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var( --platinum );
+}
+
+/* HEADER - TITLE */
+.index__title {
+    width: 72%;
+    margin-bottom: 25px;
+    background-color: var( --isabelline );
+    float: left;
+}
+.index__title_title {
+    padding-left: 25px;
+}
+
+
+
+            /* SEARCH BAR */
+.searchBar {
+    visibility: hidden;
+    height: 70px;
+    background-color: var( --black );
+    padding: 4px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.searchBar.open {
+    transform: translateY( 0 );
+    transition: transform 0.1s;
+}
+
+.searchBar.input {
+    margin: 0;
+    padding: 0;
+}
+
+.searchClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var( --platinum );
+    padding: 16px;
+}
+
+
+
+            /* SECTION - INDEX */
+.articles {
+    padding-left: 35px;
+    width: 60%;
+    float: left;
+}
+
+
+            /* ADMIN - SIGN IN */
+.admin__sign_in {
+    padding: 20px;
+}
+.admin__username-input[ type=text ], .admin__password-input[ type=password ], select {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var( --platinum );
+    border-radius: 4px;
+    outline: none;
+    box-sizing: border-box;
+}
+.admin__username-input[ type=text ]:focus, .admin__password-input[ type=password ]:focus {
+    border: 3px solid var( --isabelline );
+}
+.btn[ type=submit ] {
+    padding: 14px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+/* ADMIN - POST */
+.admin-posts {
+    width: 65%;
+    float: left;
+}
+
+/* ADMIN - POST_ADD */
+.admin__add-post {
+    width: 60%;
+    float: left;
+}
+.admin-title {
+    padding: 15px;
+}
+.admin__add-post label {
+    color: var( --black );
+    font-size: 20px;
+}
+.admin__add-post_text {
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 2px solid var( --platinum );
+    outline: none;
+}
+.admin__add-post_body {
+    width: 600px;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid var( --platinum );
+    outline: none;
+    border-radius: 4px;
+    resize: none;
+}
+
+
+
+/* BUTTONS */
+.admin-post-controls{
+    width: 100px;
+    height: 40px;
+    padding:  0px 20px;
+    float: right;
+    display: flex;
+}
+.btn {
+    width: 65px;
+    height: 40px;
+    font-size: 10px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+        /* FOOTER */
+.footer {
+    width: 70%;
+    float: right;
+    text-align: left;
+}
+
+
+            /* BODY */
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Roboto Mono", serif;
+    box-sizing: border-box;
+}
